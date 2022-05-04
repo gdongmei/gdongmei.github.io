@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <PageCover></PageCover>
+  <!-- <PageHeader></PageHeader> -->
+  <PageProjects></PageProjects>
+  <!-- <HelloWorld msg="Welcome to My Website"/> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import PageHeader from './components/PageHeader.vue'
+import PageCover from './components/PageCover.vue'
+import PageProjects from './components/PageProjects.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld,
+    // PageHeader,
+    PageCover,
+    PageProjects
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
