@@ -1,6 +1,5 @@
 <template>
     <div class="project">
-        <h2>Projects</h2>
         <div class="projects-list">
             <a href="/" class="project-item"></a>
         </div>
@@ -13,7 +12,7 @@ export default {
 </script>
 <style lang="less">
 .project{
-    width: 1000px;
+    width: 1100px;
     margin: 80px auto;
     h2{
         font-family: 'Poppins-Bold';
