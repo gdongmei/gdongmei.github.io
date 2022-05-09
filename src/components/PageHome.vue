@@ -1,13 +1,18 @@
 <template>
-    <div class="container">
+    <div class="page-home">
         <div class="cover">
-            <!-- <PageHeader></PageHeader> -->
-            <div class="title">
-                <h1>Hello,</h1>
-                <h1>I'm Dongmei Gao</h1>
-                <p>UX Designer | Web Developer</p>
-                <div class="download">
-                    <button>DOWNLOAD CV</button>
+            <PageHeader></PageHeader>
+            <div class="container">
+                <div class="title">
+                    <h1>Hello,</h1>
+                    <h1>I'm Dongmei Gao</h1>
+                    <p>UX Designer | Web Developer</p>
+                    <div class="download">
+                        <button>DOWNLOAD CV</button>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <!-- <img src="../assets/images/avatar1.jpg" alt=""> -->
                 </div>
             </div>
         </div>
@@ -16,22 +21,40 @@
     
 </template>
 <script>
-// import PageHeader from './PageHeader.vue'
+import PageHeader from './PageHeader.vue'
 import PageProjects from './PageProjects.vue'
 export default {
     name: 'PageCover',
     components: {
-        // PageHeader,
+        PageHeader,
         PageProjects
     }
 }
 </script>
 <style lang="less">
-.container {
+.page-home {
     // background: url('../assets/images/bg.jpeg') right no-repeat;
     // opacity: 0.8;
     background-size: contain;
     padding-bottom: 100px;
+    width: 1100px;
+    padding: 0 16px;
+    margin: 0 auto;
+    .container {
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+        .title {
+            width: 70%;
+        }
+        .avatar {
+            width: 15%;
+            img {
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+    }
 }
 .cover {
     position: relative;
@@ -51,11 +74,11 @@ export default {
     .title {
 
         // margin-left: 15%;
-        padding-top: 140px;
+        padding-top: 180px;
         // width: 700px;
         h1 {
             font-family: 'Poppins-Bold';
-            font-size: 80px;
+            font-size: 60px;
             color: rgba(0, 0, 0, .9);
             text-align: left;
             line-height: 1.4;

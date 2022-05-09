@@ -1,5 +1,6 @@
 <template>
     <div class="page-about">
+        <PageHeader></PageHeader>
         <div class="introduction">
             <div class="avatar-motto">
                 <div class="avatar">
@@ -41,13 +42,20 @@
     </div>
 </template>
 <script>
+import PageHeader from "./PageHeader.vue"
 export default {
+    components: {
+        PageHeader
+    },
     name: "PageAbout"
 }
 </script>
 <style lang="less">
 .page-about {
-    margin-top: 140px;
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 200px;
     .title {
         font-size: 14px;
         font-weight: 500;
@@ -61,6 +69,7 @@ export default {
     }
     .introduction {
         padding-bottom: 60px;
+        padding-top: 140px;
         // display: flex;
         // justify-content: start;
         .avatar-motto {

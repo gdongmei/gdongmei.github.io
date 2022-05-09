@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const PageAbout = () => import("../components/PageAbout");
 const PageHome = () => import("../components/PageHome");
+const ProjectCook = () => import("../components/PageProjectCook");
 
 const router = createRouter({
     history: createWebHistory(),
@@ -15,6 +16,11 @@ const router = createRouter({
             path: "/",
             name: "home",
             component: PageHome
+        },
+        {
+            path: "/cook-it",
+            name: "cookProject",
+            component: ProjectCook
         }
     ]
 });

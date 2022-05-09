@@ -14,10 +14,10 @@ export default {
 </script>
 <style lang="less">
 .header {
-    // position: absolute;
+    position: absolute;
     text-align: right;
-    margin-top: 60px;
-    // right: 0;
+    top: 60px;
+    right: 0;
     background: transparent;
     .nav {
         list-style: none;
