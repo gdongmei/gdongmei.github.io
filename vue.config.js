@@ -11,5 +11,8 @@ module.exports = defineConfig({
         path.resolve(__dirname, 'src/global.less')
       ]
     }
+  },
+  pwa: {
+    iconPaths: null
   }
 })

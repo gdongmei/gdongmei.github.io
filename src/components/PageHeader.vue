@@ -19,6 +19,11 @@ export default {
     top: 60px;
     right: 0;
     background: transparent;
+    width: 1100px;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translateX(-50%);
     .nav {
         list-style: none;
         .nav-item {

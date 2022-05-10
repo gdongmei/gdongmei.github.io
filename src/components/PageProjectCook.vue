@@ -48,6 +48,8 @@ export default {
     }
     img {
         width: 1100px;
+        display: block;
+        margin: 0 auto;
     }
     .header {
         right: 60px;
