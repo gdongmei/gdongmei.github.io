@@ -1,13 +1,15 @@
 <template>
     <div class="project-item">
-        <PageHeader></PageHeader>
         <div class="cover">
+            <PageHeader></PageHeader>
             <img src="../assets/images/Court/1.png" alt="">
         </div>
         <div class="content">
             <img src="../assets/images/Court/2.png" alt="">
+            <img src="../assets/images/Court/18.png" alt="">
+            <img src="../assets/images/Court/17.png" alt="">
+            <img src="../assets/images/Court/19.png" alt="">
             <img src="../assets/images/Court/3.png" alt="">
-            <img src="../assets/images/Court/4.png" alt="">
             <img src="../assets/images/Court/5.png" alt="">
             <img src="../assets/images/Court/6.png" alt="">
             <img src="../assets/images/Court/7.png" alt="">
@@ -20,6 +22,7 @@
             <img src="../assets/images/Court/14.png" alt="">
             <img src="../assets/images/Court/15.png" alt="">
             <img src="../assets/images/Court/16.png" alt="">
+            
         </div>
     </div>
 </template>
@@ -34,6 +37,7 @@ export default {
 <style lang="less">
 .project-item {
     .cover {
+        padding: 0 24px;
         background-color: #2E6C6C;
     }
     img {

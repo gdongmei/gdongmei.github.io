@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container">
+  <div class="portfolio-page">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <PageCover></PageCover> -->
   
@@ -28,7 +28,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+* {
+  box-sizing: border-box;
+}
 #app {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,10 +39,18 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.page-container {
-    /* position: relative; */
-    /* width: 1100px; */
-    /* padding: 0 16px; */
-    /* margin: 0 auto; */
+@media (min-width: 1134px) {
+    .page-cover-container,
+    .page-navbar
+    {
+        max-width: 1086px!important;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 768px) {
+    .page-home,
+    .page-about {
+        max-width: calc(100% - 48px);
+    }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="project-item">
-        <PageHeader></PageHeader>
         <div class="cover">
+            <PageHeader></PageHeader>
             <img src="../assets/images/Cook/1.png" alt="">
         </div>
         <div class="content">
@@ -45,9 +45,10 @@ export default {
 .project-item {
     .cover {
         background-color: #FFCDDD;
+        padding: 0 24px;
     }
     img {
-        width: 1100px;
+        width: 80%;
         display: block;
         margin: 0 auto;
     }

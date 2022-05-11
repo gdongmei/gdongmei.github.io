@@ -13,7 +13,7 @@
             <div class="bio">
                 <h1 class="title">ABOUT DONGMEI GAO</h1>
                 <p class="content">I'm currently a second-year master student in Aalto University in Finland. I'm majoring in Human-Computer Interaction and minoring in USchool which focuses on designing for people. My major courses include user-centered design and user research. </p>
-                <p class="content">I am also a front-end developer. I worked for an Internet company for three years.</p>
+                <p class="content">I am also a front-end developer. I worked for an Internet company for three years. My software developer background has equipped me to analyse problems from different aspects and work well with different people. I am studying developer experience as my Master's thesis. It's interesting to combine developer and user experience together.</p>
             </div>
             
         </div>
@@ -51,11 +51,52 @@ export default {
 }
 </script>
 <style lang="less">
+@media (max-width: 768px) {
+    .page-about {
+        .introduction,
+        .contact {
+          flex-direction: column;
+          .avatar-motto,
+          .bio,
+          .experience,
+          .capability {
+            width: 100%;
+            h1,
+            p {
+                text-align: center;
+            }
+          }
+          .bio,
+          .experience {
+              margin-top: 100px;
+          }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .page-about {
+        .introduction,
+        .contact {
+          .avatar-motto,
+          .capability {
+            width: 40%;
+          }
+          .bio,
+          .experience {
+            width: 50%;
+          }
+        }
+    }
+}
 .page-about {
     position: relative;
-    width: 1100px;
     margin: 0 auto;
     padding-bottom: 200px;
+    width: 1134px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+    box-sizing: border-box;
     .title {
         font-size: 14px;
         font-weight: 500;
@@ -69,12 +110,11 @@ export default {
     }
     .introduction {
         padding-bottom: 60px;
-        padding-top: 140px;
-        // display: flex;
-        // justify-content: start;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
         .avatar-motto {
             vertical-align: top;
-            width: 40%;
             display: inline-block;
             // flex-grow: 1;
             .avatar img{
@@ -92,10 +132,7 @@ export default {
             }
         }
         .bio {
-            width: 50%;
             display: inline-block;
-            flex-grow: 2;
-            margin-left: 100px;
             line-height: 30px;
         }
     }
@@ -105,22 +142,13 @@ export default {
     }
     
     .contact {
+        display: flex;
+        justify-content: space-between;
         margin-top: 60px;
         .content {
             line-height: 40px;
         }
-        .experience {
-            display: inline-block;
-            vertical-align: top;
-            width: 50%;
-            margin-left: 100px;
-            flex-grow: 1;
-        }
-        .capability {
-            width: 40%;
-            display: inline-block;
-            flex-grow: 1;
-        }
     }
 }
+
 </style>
