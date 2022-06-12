@@ -6,7 +6,7 @@
                 <div class="title">
                     <h1>Hello,</h1>
                     <h1>I'm Dongmei Gao</h1>
-                    <p>UX Designer | Web Developer</p>
+                    <p>User Researcher | UX Designer | Web Developer</p>
                     <div class="download">
                         <button @click="onClick">DOWNLOAD CV</button>
                     </div>
