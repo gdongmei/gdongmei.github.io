@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         onClick() {
-            location.href="https://github.com/gdongmei/gdongmei.github.io/raw/web/CV_Gao_2022.pdf";
+            location.href="https://drive.google.com/file/d/1g1DrE_2hk1cVv8oN1gmCSBnjOAPhk6xi/view?usp=sharing";
         }
     }
 }

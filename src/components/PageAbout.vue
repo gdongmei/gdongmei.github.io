@@ -1,21 +1,25 @@
 <template>
     <div class="page-about">
         <PageHeader></PageHeader>
-        <div class="introduction">
-            <div class="avatar-motto">
-                <div class="avatar">
-                    <img src="../assets/images/avatar1.jpg" alt="">
+        <div class="introduction-container">
+            <div class="introduction">
+                <div class="avatar-motto">
+                    <div class="avatar">
+                        <img src="../assets/images/avatar1.jpg" alt="">
+                    </div>
+                    <div class="motto">
+                        <p class="content">"Think and question, do and learn, care and act."</p>
+                    </div>
                 </div>
-                <div class="motto">
-                    <p class="content">"Think and question, do and learn, care and act."</p>
+                <div class="bio">
+                    <h1 class="title">ABOUT DONGMEI GAO</h1>
+                    <p class="content">I'm currently a second-year master student in Aalto University in Finland. I'm majoring in Human-Computer Interaction (HCI) and minoring in USchool which is a subject on designing for people. My major courses include user-centered design and user research. </p>
+                    <p class="content">I am also a front-end developer. I worked for a design company for three years. My software developer background has equipped me to analyse problems from different aspects and work well with different roles in a team. After being exposed to much design-related work, I was inspired by the problem-solving process, from investigating potential problems to creating better user experience.</p>
                 </div>
             </div>
-            <div class="bio">
-                <h1 class="title">ABOUT DONGMEI GAO</h1>
-                <p class="content">I'm currently a second-year master student in Aalto University in Finland. I'm majoring in Human-Computer Interaction and minoring in USchool which focuses on designing for people. My major courses include user-centered design and user research. </p>
-                <p class="content">I am also a front-end developer. I worked for an Internet company for three years. My software developer background has equipped me to analyse problems from different aspects and work well with different people. I am studying developer experience as my Master's thesis. It's interesting to combine developer and user experience together.</p>
+            <div class="career">
+                <p class="content">Now, my career plan is in the field of user experience, including user research and user experience design. I have been working hard to prepare for that. For example, I took a leave from workforce to go back to school and learned professional knowledge in HCI. Also, I did an internship as a product experience designer in 2021. Currently, I am focusing on measuring developer experience of low-code development platforms as my Master's thesis. It's interesting to study user experience from a special group of users.</p>
             </div>
-            
         </div>
         <hr>
         <div class="contact">
@@ -38,7 +42,7 @@
                 </p>
             </div>
         </div>
-        
+
     </div>
 </template>
 <script>
@@ -54,12 +58,14 @@ export default {
 @media (max-width: 768px) {
     .page-about {
         .introduction,
+        .introduction-container,
         .contact {
           flex-direction: column;
           .avatar-motto,
           .bio,
           .experience,
-          .capability {
+          .capability,
+          .career {
             width: 100%;
             h1,
             p {
@@ -107,10 +113,10 @@ export default {
         margin-top: 20px;
         text-align: left;
         color: #333;
+        line-height: 30px;
     }
     .introduction {
-        padding-bottom: 60px;
-        padding-top: 100px;
+        
         display: flex;
         justify-content: space-between;
         .avatar-motto {
@@ -133,8 +139,12 @@ export default {
         }
         .bio {
             display: inline-block;
-            line-height: 30px;
+            
         }
+    }
+    .introduction-container {
+        padding-bottom: 60px;
+        padding-top: 100px;
     }
 
     hr {
