@@ -29,7 +29,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">e-Informatica Software Engineering Journal 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Measuring End-user Developers’ Episodic Experience of a Low-code Development Platform](https://www.e-informatyka.pl/index.php/einformatica/volumes/volume-2024/issue-1/article-5/)
