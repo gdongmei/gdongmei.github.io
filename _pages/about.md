@@ -23,8 +23,8 @@ My research interest includes developer experience and low-code development. I h
 
 
 # 🔥 News
-- *2024.02*: &nbsp;🎉🎉 The paper on my master's thesis work was accepted. 
-- *2022.11*: &nbsp;🎉🎉 I started my PhD study in Aalto University. 
+- *2024.02*: &nbsp;🎉 The paper on my master's thesis work was accepted. 
+- *2022.11*: &nbsp; I started my PhD study in Aalto University. 
 
 
 # 📝 Publications 
