@@ -29,8 +29,8 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 📝 Publications 
 
-<!--<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">-->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
 [Measuring End-user Developers’ Episodic Experience of a Low-code Development Platform](https://www.e-informatyka.pl/index.php/einformatica/volumes/volume-2024/issue-1/article-5/)
 
@@ -60,6 +60,6 @@ My research interest includes neural machine translation and computer vision. I 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)-->
 
 # 💻 Work Experience
-- *2022.08 - 2022.10 (Internship)*, UX/UI Designer, Greencarlane, Remote.
-- *2021.06 - 2021.09 (Internship)*, Product Experience Designer, Tecent, China.
-- *2017.07 - 2020.06*, Frontend Developer, GaoDing Xiamen Technology Co., Ltd., China.
+- *2022.08 - 2022.10*, Internship, UX/UI Designer, Greencarlane, Remote.
+- *2021.06 - 2021.09*, Internship, Product Experience Designer, Tecent, China.
+- *2017.07 - 2020.06*, Full-time, Frontend Developer, GaoDing Xiamen Technology Co., Ltd., China.
