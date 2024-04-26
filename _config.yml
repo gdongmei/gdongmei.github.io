@@ -21,11 +21,11 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Lorem ipsum"
+  name             : "Dongmei Gao"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Lorem ipsum College"
-  location         : "Beijing, China"
-  employer         :
+  bio              : "Aalto University"
+  location         : "Espoo, Finland"
+  employer         : "Aalto University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=2vPNs3EAAAAJ"
   email            : "gdongmei6@gmail.com"
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "gdongmei"
   google_plus      :
   keybase          :
   instagram        :
