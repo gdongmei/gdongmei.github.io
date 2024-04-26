@@ -59,7 +59,7 @@ My research interest includes developer experience and low-code development. I h
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)-->
 
-# 💻 Work Experience
+# 💻 Works
 - *2022.08 - 2022.10*, Internship, UX/UI Designer, Greencarlane, Remote.
 - *2021.06 - 2021.09*, Internship, Product Experience Designer, Tecent, China.
 - *2017.07 - 2020.06*, Full-time, Frontend Developer, GaoDing Xiamen Technology Co., Ltd., China.
