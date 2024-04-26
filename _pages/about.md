@@ -34,10 +34,13 @@ My research interest includes neural machine translation and computer vision. I 
 
 [Measuring End-user Developers’ Episodic Experience of a Low-code Development Platform](https://www.e-informatyka.pl/index.php/einformatica/volumes/volume-2024/issue-1/article-5/)
 
-**Dongmei Gao**, Fabian Fagerholm
+**Dongmei Gao**, Fabian Fagerholm - e-Informatica Software Engineering Journal, 2024
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2vPNs3EAAAAJ&citation_for_view=2vPNs3EAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='2vPNs3EAAAAJ:d1gkVwhDpl0C'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2vPNs3EAAAAJ&citation_for_view=2vPNs3EAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='2vPNs3EAAAAJ:d1gkVwhDpl0C'></span></strong>-->
+- Understand end-user developers’ episodic experience when they are using a low-code platform
+- Provide guidance on how such experiences can be measured
+- Illustrates the design of questionnaire-based experience assessment in the context of development
+- Identifies the importance of separating personal experience from assessment of tasks and tools
 </div>
 </div>
 
@@ -48,12 +51,15 @@ My research interest includes neural machine translation and computer vision. I 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.02 - now*, PhD student, Aalto University, Finland
+- *2020.08 - 2023.09*, Master of Human-Computer Interaction, Aalto University, Finland. 
+- *2013.09 - 2017.06*, Bachelor of Electonic and Information Engineering, South China University of Technology, China 
 
-# 💬 Invited Talks
+<!--# 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)-->
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+# 💻 Work Experience
+- *2022.08 - 2022.10 (Internship)*, UX/UI Designer, Greencarlane, Remote.
+- *2021.06 - 2021.09 (Internship)*, Product Experience Designer, Tecent, China.
+- *2017.07 - 2020.06*, Frontend Developer, GaoDing Xiamen Technology Co., Ltd., China.
