@@ -29,16 +29,16 @@ My research interest includes developer experience and low-code development. I h
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">e-Informatica Software Engineering Journal 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Measuring End-user Developers’ Episodic Experience of a Low-code Development Platform](https://www.e-informatyka.pl/index.php/einformatica/volumes/volume-2024/issue-1/article-5/)
 
-**Dongmei Gao**, Fabian Fagerholm - e-Informatica Software Engineering Journal, 2024
+**Dongmei Gao**, Fabian Fagerholm
 
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2vPNs3EAAAAJ&citation_for_view=2vPNs3EAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='2vPNs3EAAAAJ:d1gkVwhDpl0C'></span></strong>-->
 - Understand end-user developers’ episodic experience when they are using a low-code platform
-- Provide guidance on how such experiences can be measured
+- Provide guidance on how episodic experience can be measured
 - Illustrates the design of questionnaire-based experience assessment in the context of development
 - Identifies the importance of separating personal experience from assessment of tasks and tools
 </div>
