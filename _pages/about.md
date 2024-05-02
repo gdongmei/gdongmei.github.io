@@ -17,13 +17,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am now a PhD student in Aalto University. 
+I am now a PhD student in Aalto University. I have worked as a frontend developer for three years. This experience enhanced my skills in software development and also ignited my passion for user experience. I went back to school and received my Master's degree in Human-Computer Interaction in 2022. 
 
-My research interest includes developer experience and low-code development. I have published 1 paper <a href='https://scholar.google.com/citations?user=2vPNs3EAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My master's thesis is about developer experience of low-code development. This research deepened my interest in low-code development, inspiring my continued exploration in this field for my PhD study.
+
+My current research interest includes developer experience and low-code development. I have published 1 paper <a href='https://scholar.google.com/citations?user=2vPNs3EAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
-- *2024.02*: &nbsp;🎉 The paper on my master's thesis work was accepted. 
+- *2024.02*: &nbsp;🎉 The paper on my master's thesis work was published. 
 - *2022.11*: &nbsp; I started my PhD study in Aalto University. 
 
 
@@ -59,7 +61,7 @@ My research interest includes developer experience and low-code development. I h
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)-->
 
-# 💻 Works
+# 💻 Work Experience
 - *2022.08 - 2022.10*, Internship, UX/UI Designer, Greencarlane, Remote.
 - *2021.06 - 2021.09*, Internship, Product Experience Designer, Tecent, China.
 - *2017.07 - 2020.06*, Full-time, Frontend Developer, GaoDing Xiamen Technology Co., Ltd., China.
