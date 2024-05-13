@@ -51,10 +51,9 @@ My current research interest includes developer experience and low-code developm
 # 🎖 Honors and Awards
 - *2022.02* Aalto Dean's Scholarship
 
-
 # 📖 Educations
 - *2023.02 - now*, PhD student, Aalto University, Finland
-- *2020.08 - 2023.09*, Master of Human-Computer Interaction, Aalto University, Finland. 
+- *2020.08 - 2023.09*, Master of Human-Computer Interaction and Minor of USchool(a subject on user-centered design), Aalto University, Finland.
 - *2013.09 - 2017.06*, Bachelor of Electonic and Information Engineering, South China University of Technology, China 
 
 <!--# 💬 Invited Talks
@@ -63,5 +62,6 @@ My current research interest includes developer experience and low-code developm
 
 # 💻 Work Experience
 - *2022.08 - 2022.10*, Internship, UX/UI Designer, Greencarlane, Remote.
+- *2022.02 - 2022.07*, Contract, Research Assistant, Aalto University, Finland.
 - *2021.06 - 2021.09*, Internship, Product Experience Designer, Tecent, China.
 - *2017.07 - 2020.06*, Full-time, Frontend Developer, GaoDing Xiamen Technology Co., Ltd., China.
