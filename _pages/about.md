@@ -25,6 +25,7 @@ My current research interest includes developer experience and low-code developm
 
 
 # 🔥 News
+- *2024.08*: &nbsp; I participated in the summer school course **Data Visualization** at Aalto University. [my visualization work](https://www.figma.com/proto/BdNiii3obXPWLJ6b6wfkf3/Untitled?node-id=32-204&t=IpQERjnnslXHERGm-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=43%3A4)
 - *2024.02*: &nbsp;🎉 The paper on my master's thesis work was published. 
 - *2022.11*: &nbsp; I started my PhD study in Aalto University. 
 
