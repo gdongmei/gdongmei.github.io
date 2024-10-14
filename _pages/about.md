@@ -62,6 +62,7 @@ My current research interest includes developer experience and low-code developm
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)-->
 
 # 💻 Work Experience
+- *2024.10 - 2024.12*, Contract, Teaching Assistant, Aalto University, Finland.
 - *2022.08 - 2022.10*, Internship, UX/UI Designer, Greencarlane, Remote.
 - *2022.02 - 2022.07*, Contract, Research Assistant, Aalto University, Finland.
 - *2021.06 - 2021.09*, Internship, Product Experience Designer, Tecent, China.
