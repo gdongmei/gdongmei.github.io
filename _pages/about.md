@@ -25,6 +25,7 @@ My current research interest includes developer experience and low-code developm
 
 
 # 🔥 News
+- *2025.08*: &nbsp;🎉 My paper was accepted by the [PROFES 2025 conference](https://conf.researchr.org/home/profes-2025). 
 - *2024.08*: &nbsp; I participated in the summer school course **Data Visualization** at Aalto University. [my visualization work](https://github.com/gdongmei/gdongmei.github.io/blob/main/images/visualization.png?raw=true)
 - *2024.02*: &nbsp;🎉 The paper on my master's thesis work was published. 
 - *2022.11*: &nbsp; I started my PhD study in Aalto University. 
