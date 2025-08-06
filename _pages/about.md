@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am now a PhD student in Aalto University. I have worked as a frontend developer for three years. This experience enhanced my skills in software development and also ignited my passion for user experience. I went back to school and received my Master's degree in Human-Computer Interaction in 2022. 
+I am now a PhD student in Aalto University. I have worked as a frontend developer for three years. This experience enhanced my skills in software development and also ignited my passion for user experience. I returned to school and earned my Master's degree in Human-Computer Interaction in 2022. 
 
 My master's thesis is about developer experience of low-code development. This research deepened my interest in low-code development, inspiring my continued exploration in this field for my PhD study.
 
