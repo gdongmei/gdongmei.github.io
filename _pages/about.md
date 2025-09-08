@@ -25,13 +25,27 @@ My current research interest includes developer experience and low-code developm
 
 
 # 🔥 News
-- *2025.08*: &nbsp;🎉 My paper was accepted by the [PROFES 2025 Conference](https://conf.researchr.org/home/profes-2025). 
+- *2025.08*: &nbsp;🎉 My paper will be presented at the [PROFES 2025 Conference](https://conf.researchr.org/home/profes-2025). 
 - *2024.08*: &nbsp; I participated in the summer school course **Data Visualization** at Aalto University. [my visualization work](https://github.com/gdongmei/gdongmei.github.io/blob/main/images/visualization.png?raw=true)
 - *2024.02*: &nbsp;🎉 The paper on my master's thesis work was published. 
-- *2022.11*: &nbsp; I started my PhD study in Aalto University. 
+- *2022.11*: &nbsp; I started my PhD study at Aalto University. 
 
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PROFES 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Investigation of Low-Code Development Adoption in a Finnish IT Consulting Firm](https://scholar.google.com)
+
+**Dongmei Gao**, Fabian Fagerholm
+
+<!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2vPNs3EAAAAJ&citation_for_view=2vPNs3EAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='2vPNs3EAAAAJ:d1gkVwhDpl0C'></span></strong>-->
+- Provides insights into the motivations and challenges of adopting LCDPs in consulting firms, with a particular focus on the Finnish market
+- Supports researchers and platform vendors in refining their focus on the broader adoption and untapped opportunities of LCD.
+- Develops evidence-based points regarding LCD for client companies when considering more efficient and cost-effective solutions for their business needs.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">e-Informatica Software Engineering Journal 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -41,8 +55,8 @@ My current research interest includes developer experience and low-code developm
 **Dongmei Gao**, Fabian Fagerholm
 
 <!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2vPNs3EAAAAJ&citation_for_view=2vPNs3EAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='2vPNs3EAAAAJ:d1gkVwhDpl0C'></span></strong>-->
-- Understand end-user developers’ episodic experience when they are using a low-code platform
-- Provide guidance on how episodic experience can be measured
+- Understands end-user developers’ episodic experience when they are using a low-code platform
+- Provides guidance on how episodic experience can be measured
 - Illustrates the design of questionnaire-based experience assessment in the context of development
 - Identifies the importance of separating personal experience from assessment of tasks and tools
 </div>
@@ -56,7 +70,7 @@ My current research interest includes developer experience and low-code developm
 # 📖 Educations
 - *2023.02 - now*, PhD student, Aalto University, Finland
 - *2020.08 - 2023.09*, Master of Human-Computer Interaction and Minor of USchool(a subject on user-centered design), Aalto University, Finland.
-- *2013.09 - 2017.06*, Bachelor of Electonic and Information Engineering, South China University of Technology, China 
+- *2013.09 - 2017.06*, Bachelor of Electronic and Information Engineering, South China University of Technology, China 
 
 <!--# 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
