@@ -33,7 +33,7 @@ My current research interest includes developer experience and low-code developm
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PROFES 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PROFES 2025</div><img src='images/interview study.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Investigation of Low-Code Development Adoption in a Finnish IT Consulting Firm](https://scholar.google.com)
