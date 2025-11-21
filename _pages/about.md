@@ -21,7 +21,7 @@ I am now a PhD student at Aalto University. I have worked as a frontend develope
 
 My master's thesis focuses on the developer experience of low-code development. This research deepened my interest in low-code development, inspiring my continued exploration in this field for my PhD study.
 
-My current research interest includes developer experience and low-code development. I have published 1 paper <a href='https://scholar.google.com/citations?user=2vPNs3EAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My current research interest includes developer experience and low-code development. I have published 2 paper <a href='https://scholar.google.com/citations?user=2vPNs3EAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
@@ -36,7 +36,7 @@ My current research interest includes developer experience and low-code developm
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PROFES 2025</div><img src='images/interview study.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[An Investigation of Low-Code Development Adoption in a Finnish IT Consulting Firm](https://link.springer.com/chapter/10.1007/978-3-032-12089-2_11#citeas)
+[An Investigation of Low-Code Development Adoption in a Finnish IT Consulting Firm](https://link.springer.com/chapter/10.1007/978-3-032-12089-2_11)
 
 **Dongmei Gao**, Fabian Fagerholm
 
