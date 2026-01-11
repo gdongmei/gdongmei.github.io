@@ -65,6 +65,7 @@ My current research interest includes developer experience and low-code developm
 <!--- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**-->
 
 # 🎖 Honors and Awards
+- *2025.12* Aalto Doc Incentive Scholarship SCI
 - *2022.02* Aalto Dean's Scholarship
 
 # 📖 Educations
