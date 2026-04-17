@@ -21,11 +21,11 @@ I am now a PhD student at Aalto University. I have worked as a frontend develope
 
 My master's thesis focuses on the developer experience of low-code development. This research deepened my interest in low-code development, inspiring my continued exploration in this field for my PhD study.
 
-My current research interests include developer experience and low-code development. I have published 2 paper <a href='https://scholar.google.com/citations?user=2vPNs3EAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My current research interests include developer experience and low-code development. I have published 3 paper <a href='https://scholar.google.com/citations?user=2vPNs3EAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
-- *2026.4*: &nbsp;🎉 The paper, a systematic literature review on low-code development, was accepted by the [Journal of Systems and Software](https://www.sciencedirect.com/journal/journal-of-systems-and-software).
+- *2026.04*: &nbsp;🎉 The paper, a systematic literature review on low-code development, was accepted by the [Journal of Systems and Software](https://www.sciencedirect.com/journal/journal-of-systems-and-software).
 - *2025.12*: &nbsp;🎉 I visited Salerno, Italy, and presented my paper at the [PROFES 2025 Conference](https://conf.researchr.org/home/profes-2025). 
 - *2024.08*: &nbsp; I participated in the summer school course **Data Visualization** at Aalto University. [my visualization work](https://github.com/gdongmei/gdongmei.github.io/blob/main/images/visualization.png?raw=true)
 - *2024.02*: &nbsp;🎉 The paper on my master's thesis work was published. 
