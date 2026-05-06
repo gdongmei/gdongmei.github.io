@@ -9,7 +9,7 @@
 title                    : "Dongmei Gao"
 description              : "PhD student in Aalto University. Focusing on developer experience and low-code development."
 repository               : "gdongmei/gdongmei.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
