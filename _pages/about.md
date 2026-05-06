@@ -33,7 +33,7 @@ My current research interests include developer experience and low-code developm
 
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Systems and Software</div><img src='images/interview study.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Systems and Software</div><img src='images/slr.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [What does current research say about the viability of low-code development? A systematic literature review](https://www.sciencedirect.com/science/article/pii/S0164121226001263)
