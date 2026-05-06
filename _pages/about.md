@@ -33,6 +33,21 @@ My current research interests include developer experience and low-code developm
 
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Systems and Software</div><img src='images/interview study.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[What does current research say about the viability of low-code development? A systematic literature review](https://www.sciencedirect.com/science/article/pii/S0164121226001263)
+
+**Dongmei Gao**, Fabian Fagerholm, Vilma Toivanen 
+
+<!--[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2vPNs3EAAAAJ&citation_for_view=2vPNs3EAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='2vPNs3EAAAAJ:d1gkVwhDpl0C'></span></strong>-->
+- A comprehensive synthesis of LCD research, providing insights into the viability of LCD.
+- A context- and evidence-based analysis of LCD adoption, highlighting key benefits, challenges, and success factors.
+- Insights into social and organizational dynamics, including culture, collaboration, and stakeholder engagement in LCD adoption.
+- Identification of research gaps, guiding future studies toward underexplored areas in LCD.
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PROFES 2025</div><img src='images/interview study.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
