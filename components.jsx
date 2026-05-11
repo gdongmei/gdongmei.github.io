@@ -28,13 +28,8 @@ function AnimatedNumber({ value, duration = 900 }) {
 function Sidebar() {
   return (
     <aside className="sidebar">
-      <div className="brand-mark">
-        <span className="dot"></span>
-        <span>dongmei.gao / portfolio · v3</span>
-      </div>
-
       <div className="portrait">
-        <div className="portrait-ph">PORTRAIT · 4 × 5</div>
+        <img src="images/android-chrome-512x512.png" alt="Dongmei Gao" />
       </div>
 
       <h1 className="name">Dongmei <em>Gao</em></h1>
@@ -47,28 +42,22 @@ function Sidebar() {
         </div>
       </div>
 
-      <p className="bio">
-        Studying the developer experience of low-code platforms — when they
-        help, when they hurt, and what changes when more of the team builds with them.
-      </p>
+      <p className="bio"></p>
 
       <div className="meta">
         <div className="meta-row">
-          <span className="meta-key">Affil.</span>
+          <span className="meta-key">Affiliation</span>
           <span className="meta-val">Aalto University</span>
         </div>
         <div className="meta-row">
-          <span className="meta-key">Based</span>
-          <span className="meta-val">Espoo, Finland · UTC+2</span>
+          <span className="meta-key">Location</span>
+          <span className="meta-val">Espoo, Finland</span>
         </div>
         <div className="meta-row">
           <span className="meta-key">Email</span>
           <span className="meta-val"><a href={`mailto:${SITE.contact.email}`}>{SITE.contact.email}</a></span>
         </div>
-        <div className="meta-row">
-          <span className="meta-key">Advisor</span>
-          <span className="meta-val">Fabian Fagerholm</span>
-        </div>
+
       </div>
 
       <div className="socials">
@@ -85,7 +74,6 @@ const NAV = [
   { id: "about",   label: "About" },
   { id: "news",    label: "News",         count: NEWS.length },
   { id: "pubs",    label: "Publications", count: PUBS.length },
-  { id: "honors",  label: "Honors",       count: HONORS.length },
   { id: "edu",     label: "Education",    count: EDU.length },
   { id: "work",    label: "Experience" },
 ];
@@ -138,7 +126,7 @@ function TopNav({ theme, onToggleTheme }) {
 function SectionHead({ num, title, sub }) {
   return (
     <header className="section-head">
-      <span className="section-num">{num}</span>
+      {num && <span className="section-num">{num}</span>}
       <h2 className="section-title">{title}</h2>
       {sub && <span className="section-sub">{sub}</span>}
     </header>
@@ -194,7 +182,12 @@ function PubFigure({ kind }) {
 function PubCard({ p }) {
   return (
     <article className="pub">
-      <PubFigure kind={p.figure} />
+      <div className="pub-left">
+        <div className="pub-figure">
+          <img src={p.img} alt={p.title} />
+        </div>
+        <a className="pub-read" href={p.href}>Read paper</a>
+      </div>
       <div>
         <div className="pub-meta">
           <span className="pub-venue">{p.venue}</span>
@@ -219,11 +212,6 @@ function PubCard({ p }) {
         <ul className="pub-bullets">
           {p.bullets.map((b, i) => <li key={i}>{b}</li>)}
         </ul>
-        <div className="pub-actions">
-          <a className="primary" href={p.href}>Read paper</a>
-          <a href="#">PDF</a>
-          <a href="#">BibTeX</a>
-        </div>
       </div>
     </article>
   );

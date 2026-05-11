@@ -7,7 +7,7 @@ const SITE = {
   location: "Espoo, Finland",
   lede: (
     <>
-      I research the <em>experience of building software</em> — how developers
+      I research the <em>developer experience in software engineering</em> — how developers
       think, struggle, and collaborate when working with low-code tools.
     </>
   ),
@@ -22,7 +22,6 @@ const SITE = {
       { label: "GitHub",   href: "https://github.com/gdongmei" },
       { label: "Scholar",  href: "https://scholar.google.com/citations?user=2vPNs3EAAAAJ" },
       { label: "ORCID",    href: "https://orcid.org/0009-0000-7332-8208" },
-      { label: "CV / PDF", href: "#" },
     ],
   },
 };
@@ -30,8 +29,8 @@ const SITE = {
 const STATS = [
   { value: "3",  unit: "papers",  label: "Published" },
   { value: "11", unit: "",        label: "Citations" },
-  { value: "4",  unit: "yrs",     label: "Industry" },
-  { value: "2",  unit: "deg",     label: "HCI · SSE" },
+  { value: "3",  unit: "yrs",     label: "Industry" },
+  { value: "3",  unit: "deg",     label: "EE · HCI · SSE" },
 ];
 
 const NEWS = [
@@ -50,7 +49,7 @@ const PUBS = [
     title: "What does current research say about the viability of low-code development? A systematic literature review",
     authors: ["Dongmei Gao", "Fabian Fagerholm", "Vilma Toivanen"],
     href: "https://www.sciencedirect.com/science/article/pii/S0164121226001263",
-    figure: "scatter",
+    img: "images/slr.jpg",
     bullets: [
       "A comprehensive synthesis of LCD research, providing insights into the viability of LCD.",
       "A context- and evidence-based analysis of LCD adoption, highlighting key benefits, challenges, and success factors.",
@@ -66,7 +65,7 @@ const PUBS = [
     title: "An Investigation of Low-Code Development Adoption in a Finnish IT Consulting Firm",
     authors: ["Dongmei Gao", "Fabian Fagerholm"],
     href: "https://link.springer.com/chapter/10.1007/978-3-032-12089-2_11",
-    figure: "bars",
+    img: "images/interview study.png",
     bullets: [
       "Provides insights into the motivations and challenges of adopting LCDPs in consulting firms, with a particular focus on the Finnish market.",
       "Supports researchers and platform vendors in refining their focus on the broader adoption and untapped opportunities of LCD.",
@@ -81,7 +80,7 @@ const PUBS = [
     title: "Measuring End-user Developers' Episodic Experience of a Low-code Development Platform",
     authors: ["Dongmei Gao", "Fabian Fagerholm"],
     href: "https://www.e-informatyka.pl/index.php/einformatica/volumes/volume-2024/issue-1/article-5/",
-    figure: "quadrant",
+    img: "images/500x300.png",
     bullets: [
       "Understands end-user developers' episodic experience when using a low-code platform.",
       "Provides guidance on how episodic experience can be measured.",
@@ -98,9 +97,9 @@ const HONORS = [
 ];
 
 const EDU = [
-  { date: "2023 — present", title: "PhD, Software and Service Engineering",     place: "Aalto University · Espoo, FI",               desc: "Advisor: Fabian Fagerholm. Research focus: developer experience, low-code platforms, HCI methods in SE." },
-  { date: "2020 — 2023",    title: "MSc, Human–Computer Interaction",              place: "Aalto University · Espoo, FI",               desc: "Minor in USchool (user-centered design). Thesis on the developer experience of low-code development." },
-  { date: "2013 — 2017",    title: "BEng, Electronic and Information Engineering", place: "South China University of Technology · China", desc: "Foundation in software systems, web technologies, and human factors." },
+  { date: "2023.02 — present", title: "PhD, Software and Service Engineering",     place: "Aalto University · Espoo, FI",               desc: "Advisor: Fabian Fagerholm. Research focus: developer experience, low-code platforms, HCI methods in SE." },
+  { date: "2020.08 — 2022.09",    title: "MSc, Human–Computer Interaction",              place: "Aalto University · Espoo, FI",               desc: "Minor in USchool (user-centered design). Thesis on the developer experience of low-code development." },
+  { date: "2013.08 — 2017.06",    title: "BEng, Electronic and Information Engineering", place: "South China University of Technology · China", desc: "Foundation in computer science." },
 ];
 
 const WORK = [

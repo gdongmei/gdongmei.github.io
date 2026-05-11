@@ -1,4 +1,4 @@
-const { useState, useEffect, useMemo } = React;
+const { useState, useEffect } = React;
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "accent": "deep-blue",
@@ -34,11 +34,6 @@ function App() {
 
   const toggleTheme = () => setTweak("theme", theme === "dark" ? "light" : "dark");
 
-  // Publications filter
-  const years = useMemo(() => ["All", ...Array.from(new Set(PUBS.map(p => p.year))).sort((a,b)=>b-a)], []);
-  const [pubFilter, setPubFilter] = useState("All");
-  const filteredPubs = pubFilter === "All" ? PUBS : PUBS.filter(p => p.year === pubFilter);
-
   return (
     <div className="page">
       <Sidebar />
@@ -47,7 +42,7 @@ function App() {
 
         {/* About */}
         <section id="about" className="section" data-screen-label="about">
-          <SectionHead num="01" title="About" sub="researcher · builder · teacher" />
+          <SectionHead title="About" />
           <p className="about-lede">{SITE.lede}</p>
           <div className="about-body">
             {SITE.bioParas.map((p, i) => <p key={i}>{p}</p>)}
@@ -70,13 +65,13 @@ function App() {
 
         {/* News */}
         <section id="news" className="section" data-screen-label="news">
-          <SectionHead num="02" title="News" sub="recent activity" />
+          <SectionHead title="News" />
           <div className="news">
             {NEWS.map((n, i) => (
               <div className="news-item" key={i}>
                 <span className="news-date">{n.date}</span>
                 <span className="news-body">{n.body}</span>
-                <span className={`news-tag ${n.tag === "publication" ? "pub" : ""}`}>{n.tag}</span>
+                <span className="news-tag">{n.tag}</span>
               </div>
             ))}
           </div>
@@ -84,38 +79,14 @@ function App() {
 
         {/* Publications */}
         <section id="pubs" className="section" data-screen-label="publications">
-          <SectionHead num="03" title="Publications" sub={`${PUBS.length} papers · ${PUBS.reduce((a,p)=>a+p.cites,0)} citations`} />
-          <div className="pub-filter">
-            {years.map((y) => {
-              const c = y === "All" ? PUBS.length : PUBS.filter(p => p.year === y).length;
-              return (
-                <button key={y} className={pubFilter === y ? "on" : ""} onClick={() => setPubFilter(y)}>
-                  {y}<span className="count">{c}</span>
-                </button>
-              );
-            })}
-          </div>
-          {filteredPubs.map((p, i) => <PubCard p={p} key={i} />)}
+          <SectionHead title="Publications" sub={`${PUBS.length} papers · ${PUBS.reduce((a,p)=>a+p.cites,0)} citations`} />
+          {PUBS.map((p, i) => <PubCard p={p} key={i} />)}
         </section>
 
-        {/* Honors */}
-        <section id="honors" className="section" data-screen-label="honors">
-          <SectionHead num="04" title="Honors & Awards" />
-          {HONORS.map((h, i) => (
-            <div className="row" key={i}>
-              <span className="row-date">{h.date}</span>
-              <div>
-                <h3 className="row-title">{h.title}</h3>
-                <div className="row-place">{h.place}</div>
-                <div className="row-desc">{h.desc}</div>
-              </div>
-            </div>
-          ))}
-        </section>
 
         {/* Education */}
         <section id="edu" className="section" data-screen-label="education">
-          <SectionHead num="05" title="Education" />
+          <SectionHead title="Education" />
           {EDU.map((h, i) => (
             <div className="row" key={i}>
               <span className="row-date">{h.date}</span>
@@ -130,7 +101,7 @@ function App() {
 
         {/* Work */}
         <section id="work" className="section" data-screen-label="experience">
-          <SectionHead num="06" title="Experience" />
+          <SectionHead title="Experience" />
           {WORK.map((h, i) => (
             <div className="row" key={i}>
               <span className="row-date">{h.date}</span>
@@ -144,42 +115,12 @@ function App() {
         </section>
 
         <footer className="foot">
-          <div className="big">
-            Always <em>building</em>,<br/>always <em>asking</em>.
-          </div>
           <div>
             © 2026 · Dongmei Gao · last updated May 10, 2026
           </div>
         </footer>
       </main>
 
-      <TweaksPanel>
-        <TweakSection label="Theme" />
-        <TweakRadio
-          label="Mode"
-          value={t.theme}
-          options={["light", "dark"]}
-          onChange={(v) => setTweak("theme", v)}
-        />
-        <TweakSelect
-          label="Accent"
-          value={t.accent}
-          options={["deep-blue", "forest", "rust", "ink"]}
-          onChange={(v) => setTweak("accent", v)}
-        />
-        <TweakSection label="Layout" />
-        <TweakRadio
-          label="Density"
-          value={t.density}
-          options={["compact", "regular", "airy"]}
-          onChange={(v) => setTweak("density", v)}
-        />
-        <TweakToggle
-          label="Show stats strip"
-          value={t.showStats}
-          onChange={(v) => setTweak("showStats", v)}
-        />
-      </TweaksPanel>
     </div>
   );
 }
