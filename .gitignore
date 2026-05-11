@@ -1,4 +1,5 @@
 _site/
+vendor/
 push.sh
 .DS_Store
 .bundle/
