@@ -1,11 +1,11 @@
 const { useState, useEffect } = React;
 
-const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+const TWEAK_DEFAULTS = {
   "accent": "deep-blue",
   "density": "regular",
   "theme": "light",
-  "showStats": true
-}/*EDITMODE-END*/;
+  "showStats": true,
+};
 
 const ACCENTS = {
   "deep-blue":   { c: "oklch(0.45 0.12 250)", soft: "oklch(0.45 0.12 250 / 0.10)", dark: "oklch(0.78 0.12 250)", softDark: "oklch(0.78 0.12 250 / 0.16)" },
@@ -14,9 +14,38 @@ const ACCENTS = {
   "ink":         { c: "oklch(0.30 0.02 280)", soft: "oklch(0.30 0.02 280 / 0.10)", dark: "oklch(0.85 0.02 280)", softDark: "oklch(0.85 0.02 280 / 0.16)" },
 };
 
+const CITATIONS_URL =
+  "https://raw.githubusercontent.com/gdongmei/gdongmei.github.io/google-scholar-stats/citations.json";
+
+function useTweaks(defaults) {
+  const [state, setState] = useState(defaults);
+  const set = (k, v) => setState((prev) => ({ ...prev, [k]: v }));
+  return [state, set];
+}
+
+function normalizeTitle(t) {
+  return t.toLowerCase().replace(/\s+/g, " ").trim();
+}
+
 function App() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
   const theme = t.theme;
+
+  // Live citation data fetched from google-scholar-stats branch
+  const [citeMap, setCiteMap] = useState({});   // normalizedTitle → cites
+  const [totalCites, setTotalCites] = useState(null);
+
+  useEffect(() => {
+    fetch(CITATIONS_URL)
+      .then((r) => r.json())
+      .then((data) => {
+        setTotalCites(data.total_citations);
+        const map = {};
+        (data.papers || []).forEach((p) => { map[p.title_key] = p.cites; });
+        setCiteMap(map);
+      })
+      .catch(() => {/* fall back to static values in data.jsx */});
+  }, []);
 
   // Apply theme + density on <html>
   useEffect(() => {
@@ -34,6 +63,18 @@ function App() {
 
   const toggleTheme = () => setTweak("theme", theme === "dark" ? "light" : "dark");
 
+  const livePubs = PUBS.map((p) => {
+    const key = normalizeTitle(p.title);
+    return key in citeMap ? { ...p, cites: citeMap[key] } : p;
+  });
+
+  const displayedCites = livePubs.reduce((a, p) => a + p.cites, 0);
+  const displayStats = STATS.map((s) =>
+    s.label === "Citations" && totalCites !== null
+      ? { ...s, value: String(totalCites) }
+      : s
+  );
+
   return (
     <div className="page">
       <Sidebar />
@@ -50,7 +91,7 @@ function App() {
 
           {t.showStats && (
             <div className="stats">
-              {STATS.map((s) => (
+              {displayStats.map((s) => (
                 <div className="stat" key={s.label}>
                   <div className="stat-value">
                     <AnimatedNumber value={s.value} />
@@ -79,8 +120,8 @@ function App() {
 
         {/* Publications */}
         <section id="pubs" className="section" data-screen-label="publications">
-          <SectionHead title="Publications" sub={`${PUBS.length} papers · ${PUBS.reduce((a,p)=>a+p.cites,0)} citations`} />
-          {PUBS.map((p, i) => <PubCard p={p} key={i} />)}
+          <SectionHead title="Publications" sub={`${livePubs.length} papers · ${displayedCites} citations`} />
+          {livePubs.map((p, i) => <PubCard p={p} key={i} />)}
         </section>
 
 
