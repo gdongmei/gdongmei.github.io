@@ -133,51 +133,6 @@ function SectionHead({ num, title, sub }) {
   );
 }
 
-// ---------- Publication figure (placeholder visualization per paper) ----------
-function PubFigure({ kind }) {
-  const yLabel = "LCD impact";
-  const xLabel = "Evidence sufficiency";
-  let dots = [];
-  if (kind === "scatter") {
-    dots = [
-      { x: 22, y: 28, k: "" }, { x: 30, y: 78, k: "open" }, { x: 45, y: 50, k: "" },
-      { x: 58, y: 38, k: "accent" }, { x: 70, y: 22, k: "" }, { x: 78, y: 70, k: "open" },
-      { x: 85, y: 35, k: "accent" },
-    ];
-  } else if (kind === "bars") {
-    return (
-      <div className="pub-figure">
-        <span className="pf-label">PROFES · survey</span>
-        <span className="pf-axis y">{yLabel}</span>
-        <span className="pf-axis x">{xLabel}</span>
-        {[40, 65, 55, 80, 30, 70].map((h, i) => (
-          <span key={i} style={{
-            position: "absolute", bottom: "18%", left: `${14 + i * 13}%`,
-            width: 10, height: `${h * 0.55}%`,
-            background: i === 3 ? "var(--accent)" : "var(--ink)",
-            opacity: i === 3 ? 1 : 0.78,
-          }}/>
-        ))}
-      </div>
-    );
-  } else if (kind === "quadrant") {
-    dots = [
-      { x: 30, y: 30, k: "" }, { x: 30, y: 70, k: "open" },
-      { x: 70, y: 30, k: "accent" }, { x: 70, y: 70, k: "" },
-      { x: 50, y: 50, k: "" },
-    ];
-  }
-  return (
-    <div className="pub-figure">
-      <span className="pf-label">{kind === "scatter" ? "JSS · synthesis" : "Thesis · model"}</span>
-      <span className="pf-axis y">{yLabel}</span>
-      <span className="pf-axis x">{xLabel}</span>
-      {dots.map((d, i) => (
-        <span key={i} className={`dot ${d.k}`} style={{ left: `${d.x}%`, bottom: `${d.y}%` }} />
-      ))}
-    </div>
-  );
-}
 
 function PubCard({ p }) {
   return (
@@ -218,5 +173,5 @@ function PubCard({ p }) {
 }
 
 Object.assign(window, {
-  AnimatedNumber, Sidebar, TopNav, SectionHead, PubFigure, PubCard, NAV,
+  AnimatedNumber, Sidebar, TopNav, SectionHead, PubCard, NAV,
 });
