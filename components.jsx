@@ -33,6 +33,7 @@ function Sidebar() {
       </div>
 
       <h1 className="name">Dongmei <em>Gao</em></h1>
+      <p className="name-zh">In Chinese, 高冬梅</p>
 
       <div className="role">
         <div>PhD researcher · HCI × Software Engineering</div>
