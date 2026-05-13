@@ -29,6 +29,8 @@ function normalizeTitle(t) {
 
 function App() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const [showAllNews, setShowAllNews] = useState(false);
+  const [showAllWork, setShowAllWork] = useState(false);
   const theme = t.theme;
 
   // Live citation data fetched from google-scholar-stats branch
@@ -107,15 +109,23 @@ function App() {
         {/* News */}
         <section id="news" className="section" data-screen-label="news">
           <SectionHead title="News" />
-          <div className="news">
-            {NEWS.map((n, i) => (
-              <div className="news-item" key={i}>
-                <span className="news-date">{n.date}</span>
-                <span className="news-body">{n.body}</span>
-                <span className="news-tag">{n.tag}</span>
+          <div className="news-timeline">
+            {(showAllNews ? NEWS : NEWS.slice(0, 3)).map((n, i) => (
+              <div className="news-tl-item" data-tag={n.tag} key={i}>
+                <div className="news-tl-dot" />
+                <div className="news-tl-top">
+                  <span className="news-date">{n.date}</span>
+                  <span className={`news-tag news-tag--${n.tag}`}>{n.tag}</span>
+                </div>
+                <div className="news-body">{n.body}</div>
               </div>
             ))}
           </div>
+          {NEWS.length > 3 && (
+            <button className="news-more" onClick={() => setShowAllNews(v => !v)}>
+              {showAllNews ? "Show less" : `Show all ${NEWS.length} →`}
+            </button>
+          )}
         </section>
 
         {/* Publications */}
@@ -143,7 +153,7 @@ function App() {
         {/* Work */}
         <section id="work" className="section" data-screen-label="experience">
           <SectionHead title="Experience" />
-          {WORK.map((h, i) => (
+          {(showAllWork ? WORK : WORK.slice(0, 3)).map((h, i) => (
             <div className="row" key={i}>
               <span className="row-date">{h.date}</span>
               <div>
@@ -153,11 +163,16 @@ function App() {
               </div>
             </div>
           ))}
+          {WORK.length > 3 && (
+            <button className="news-more" onClick={() => setShowAllWork(v => !v)}>
+              {showAllWork ? "Show less" : `Show all ${WORK.length} →`}
+            </button>
+          )}
         </section>
 
         <footer className="foot">
           <div>
-            © 2026 · Dongmei Gao · last updated May 10, 2026
+            © 2026 · Dongmei Gao · last updated May 13, 2026
           </div>
         </footer>
       </main>
