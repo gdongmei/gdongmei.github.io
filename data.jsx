@@ -28,7 +28,7 @@ const SITE = {
 
 const STATS = [
   { value: "3",  unit: "yrs",     label: "Industry" },
-  { value: "3",  unit: "yrs",     label: "Research" },
+  { value: "4",  unit: "yrs",     label: "Research" },
   { value: "3",  unit: "papers",  label: "Published" },
   { value: "11", unit: "",        label: "Citations" }
 ];
