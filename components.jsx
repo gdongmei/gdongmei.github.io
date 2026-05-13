@@ -65,6 +65,10 @@ function Sidebar() {
           <a key={l.label} href={l.href}>{l.label}</a>
         ))}
       </div>
+
+      <div className="sidebar-pages">
+        <a href="interests.html">Interests →</a>
+      </div>
     </aside>
   );
 }
@@ -75,7 +79,7 @@ const NAV = [
   { id: "news",    label: "News",         count: NEWS.length },
   { id: "pubs",    label: "Publications", count: PUBS.length },
   { id: "edu",     label: "Education",    count: EDU.length },
-  { id: "work",    label: "Experience" },
+  { id: "work",    label: "Work Experience" },
 ];
 
 function TopNav({ theme, onToggleTheme }) {
@@ -172,6 +176,25 @@ function PubCard({ p }) {
   );
 }
 
+function useTweaks(defaults) {
+  const [state, setState] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem("site-tweaks") || "{}");
+      return { ...defaults, ...saved };
+    } catch {
+      return { ...defaults };
+    }
+  });
+  function setTweak(key, value) {
+    setState(prev => {
+      const next = { ...prev, [key]: value };
+      try { localStorage.setItem("site-tweaks", JSON.stringify(next)); } catch {}
+      return next;
+    });
+  }
+  return [state, setTweak];
+}
+
 Object.assign(window, {
-  AnimatedNumber, Sidebar, TopNav, SectionHead, PubCard, NAV,
+  AnimatedNumber, Sidebar, TopNav, SectionHead, PubCard, NAV, useTweaks,
 });

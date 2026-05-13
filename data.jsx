@@ -12,7 +12,7 @@ const SITE = {
     </>
   ),
   bioParas: [
-    "I'm a PhD student at Aalto University, working at the intersection of human–computer interaction and software engineering. Before returning to academia, I spent three years as a frontend developer — that hands-on experience is what first pulled me toward studying developer experience as a research problem.",
+    "I'm a PhD student at Aalto University, working at the intersection of human–computer interaction and software engineering. Before returning to academia, I spent three years as a frontend developer — that hands-on experience is what first pulled me toward studying human-computer interaction as my master's program.",
     "My master's thesis examined the developer experience of low-code platforms. That work shaped the direction I continue to follow in my PhD: understanding when low-code helps, when it gets in the way, and what it means for the people who build with it.",
   ],
   contact: {
@@ -27,15 +27,15 @@ const SITE = {
 };
 
 const STATS = [
-  { value: "3",  unit: "papers",  label: "Published" },
-  { value: "11", unit: "",        label: "Citations" },
   { value: "3",  unit: "yrs",     label: "Industry" },
-  { value: "3",  unit: "deg",     label: "EE · HCI · SSE" },
+  { value: "3",  unit: "yrs",     label: "Research" },
+  { value: "3",  unit: "papers",  label: "Published" },
+  { value: "11", unit: "",        label: "Citations" }
 ];
 
 const NEWS = [
   { date: "Apr 2026", tag: "publication", body: <>The paper <a href="https://www.sciencedirect.com/science/article/pii/S0164121226001263">a systematic literature review on low-code development</a> was accepted by the <em>Journal of Systems and Software</em>.</> },
-  { date: "Dec 2025", tag: "talk",        body: <>Presented at <a href="https://conf.researchr.org/home/profes-2025">PROFES 2025</a> in Salerno, Italy.</> },
+  { date: "Dec 2025", tag: "talk",        body: <>Presented my paper at <a href="https://conf.researchr.org/home/profes-2025">PROFES 2025</a> in Salerno, Italy.</> },
   { date: "Aug 2024", tag: "project",     body: <>Completed the summer school course <b>Data Visualization</b> at Aalto. <a href="https://github.com/gdongmei/gdongmei.github.io/blob/main/images/visualization.png?raw=true">See the work →</a></> },
   { date: "Feb 2024", tag: "publication", body: <>The paper on my master's thesis was <a href="https://www.e-informatyka.pl/index.php/einformatica/volumes/volume-2024/issue-1/article-5/">published</a>.</> },
   { date: "Nov 2022", tag: "milestone",   body: <>Started my PhD at Aalto University.</> },
@@ -97,15 +97,15 @@ const HONORS = [
 ];
 
 const EDU = [
-  { date: "2023.02 — present", title: "PhD, Software and Service Engineering",     place: "Aalto University · Espoo, FI",               desc: "Advisor: Fabian Fagerholm. Research focus: developer experience, low-code platforms, HCI methods in SE." },
+  { date: "2023.02 — present", title: "PhD, Software and Service Engineering",     place: "Aalto University · Espoo, FI",               desc: "Advisor: Fabian Fagerholm. Research focus: developer experience, low-code development, HCI methods in SE." },
   { date: "2020.08 — 2022.09",    title: "MSc, Human–Computer Interaction",              place: "Aalto University · Espoo, FI",               desc: "Minor in USchool (user-centered design). Thesis on the developer experience of low-code development." },
   { date: "2013.08 — 2017.06",    title: "BEng, Electronic and Information Engineering", place: "South China University of Technology · China", desc: "Foundation in computer science." },
 ];
 
 const WORK = [
-  { date: "2024.10 — 2024.12", title: "Teaching Assistant",          place: "Aalto University · Finland",                  desc: "Contract teaching assistant for HCI methods coursework." },
-  { date: "2022.08 — 2022.10", title: "UX/UI Designer",              place: "Greencarlane · Remote",                       desc: "Internship focused on user experience and interface design." },
-  { date: "2022.02 — 2022.07", title: "Research Assistant",          place: "Aalto University · Finland",                  desc: "Contract research support at Aalto University." },
+  { date: "2024.10 — 2024.12, 2025.02 — 2025.05", title: "Teaching Assistant", place: "Aalto University · Finland", desc: "Assist professors to give lectures and grade assignments." },
+  // { date: "2022.08 — 2022.10", title: "UX/UI Designer",              place: "Greencarlane · Remote",                       desc: "Internship focused on user experience and interface design." },
+  { date: "2022.02 — 2022.07", title: "Research Assistant",          place: "Aalto University · Finland",                  desc: "Contract research doing my master's thesis at Aalto University." },
   { date: "2021.06 — 2021.09", title: "Product Experience Designer", place: "Tencent · China",                              desc: "Internship in product experience design." },
   { date: "2017.07 — 2020.06", title: "Frontend Developer",          place: "GaoDing Xiamen Technology Co., Ltd. · China", desc: "Three years building production web apps as a full-time frontend developer." },
 ];
