@@ -1,0 +1,30 @@
+{
+  "total_citations": 11,
+  "papers": [
+    {
+      "title": "Measuring End-user Developers\u2019 Episodic Experience of a Low-code Development Platform",
+      "title_key": "measuring end-user developers\u2019 episodic experience of a low-code development platform",
+      "year": 2024,
+      "cites": 6
+    },
+    {
+      "title": "Measuring Developers' Episodic Experience of Low-Code Development Platforms",
+      "title_key": "measuring developers' episodic experience of low-code development platforms",
+      "year": 2022,
+      "cites": 5
+    },
+    {
+      "title": "What does current research say about the viability of low-code development? A systematic literature review",
+      "title_key": "what does current research say about the viability of low-code development? a systematic literature review",
+      "year": 2026,
+      "cites": 0
+    },
+    {
+      "title": "An Investigation of Low-Code Development Adoption in a Finnish IT Consulting Firm",
+      "title_key": "an investigation of low-code development adoption in a finnish it consulting firm",
+      "year": 2025,
+      "cites": 0
+    }
+  ],
+  "updated": "2026-05-13T15:03:17.260568+00:00"
+}
