@@ -18,6 +18,13 @@ function App() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
   const [showAllNews, setShowAllNews] = useState(false);
   const [showAllWork, setShowAllWork] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState("May 13, 2026");
+  useEffect(() => {
+    fetch("build-meta.json")
+      .then(r => r.json())
+      .then(d => { if (d.lastUpdated) setLastUpdated(d.lastUpdated); })
+      .catch(() => {});
+  }, []);
   const theme = t.theme;
 
   // Apply theme + density on <html>
@@ -131,7 +138,7 @@ function App() {
 
         <footer className="foot">
           <div>
-            © 2026 · Dongmei Gao · last updated May 13, 2026
+            © {new Date().getFullYear()} · Dongmei Gao · last updated {lastUpdated}
           </div>
         </footer>
       </main>
