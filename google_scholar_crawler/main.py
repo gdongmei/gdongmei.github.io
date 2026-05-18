@@ -13,7 +13,7 @@ import os
 import re
 from datetime import datetime, timezone
 
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator
 
 
 def normalize(title: str) -> str:
@@ -24,6 +24,11 @@ def main():
     scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID", "")
     if not scholar_id:
         raise ValueError("GOOGLE_SCHOLAR_ID environment variable is not set")
+
+    # Use free proxies to avoid GitHub Actions IP blocks from Google Scholar
+    pg = ProxyGenerator()
+    pg.FreeProxies()
+    scholarly.use_proxy(pg)
 
     print(f"Fetching profile: {scholar_id}")
     author = scholarly.search_author_id(scholar_id)

@@ -25,6 +25,7 @@ jobs:
           pip install -r google_scholar_crawler/requirements.txt
 
       - name: Fetch citation data
+        timeout-minutes: 10
         run: |
           cd google_scholar_crawler
           python main.py
