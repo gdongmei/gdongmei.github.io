@@ -29,6 +29,10 @@ jobs:
         run: |
           cd google_scholar_crawler
           python main.py
+        env:
+          # Set S2_AUTHOR_ID as a GitHub Actions secret after the first successful run
+          # to skip the paper-title search step on all future runs.
+          S2_AUTHOR_ID: ${{ secrets.S2_AUTHOR_ID }}
 
       - name: Commit results to google-scholar-stats branch
         run: |
