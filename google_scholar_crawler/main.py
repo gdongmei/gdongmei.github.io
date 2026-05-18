@@ -1,48 +1,91 @@
 """
-Fetch per-paper citation counts and the profile-level total from Google Scholar.
+Fetch per-paper citation counts and the profile-level total from Semantic Scholar.
 Outputs results/citations.json, which is committed to the google-scholar-stats branch
 by the GitHub Actions workflow and consumed by the React site on page load.
 
-Total citations (author['citedby']) already includes every paper in the Scholar
-profile — including papers not displayed on the website (e.g. master's thesis) —
-so no additional summing is needed.
+Semantic Scholar is a free official API — no scraping, no IP blocks.
+Author is found by name + Aalto affiliation match, then full paper list is fetched.
 """
 
 import json
 import os
 import re
+import time
 from datetime import datetime, timezone
 
-from scholarly import scholarly, ProxyGenerator
+import requests
+
+API = "https://api.semanticscholar.org/graph/v1"
+HEADERS = {"User-Agent": "gdongmei-portfolio-citation-bot/1.0"}
 
 
 def normalize(title: str) -> str:
     return re.sub(r"\s+", " ", title.lower()).strip()
 
 
+def find_author_id() -> str:
+    """Find the Semantic Scholar author ID for Dongmei Gao at Aalto."""
+    resp = requests.get(
+        f"{API}/author/search",
+        params={
+            "query": "Dongmei Gao",
+            "fields": "authorId,name,affiliations,citationCount",
+            "limit": 20,
+        },
+        headers=HEADERS,
+        timeout=30,
+    )
+    resp.raise_for_status()
+
+    for author in resp.json().get("data", []):
+        affiliations = [a.get("name", "").lower() for a in author.get("affiliations", [])]
+        if any("aalto" in aff for aff in affiliations):
+            print(f"Found author: {author['name']} (S2 ID: {author['authorId']})")
+            return author["authorId"]
+
+    # Fallback: paper-title search to identify the author
+    time.sleep(1)
+    resp = requests.get(
+        f"{API}/paper/search",
+        params={
+            "query": "Episodic Experience Low-code Development Platform End-user Developers",
+            "fields": "title,authors",
+            "limit": 5,
+        },
+        headers=HEADERS,
+        timeout=30,
+    )
+    resp.raise_for_status()
+    for paper in resp.json().get("data", []):
+        for author in paper.get("authors", []):
+            if "gao" in author["name"].lower():
+                print(f"Found author via paper: {author['name']} (S2 ID: {author['authorId']})")
+                return author["authorId"]
+
+    raise RuntimeError("Could not locate author on Semantic Scholar")
+
+
 def main():
-    scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID", "")
-    if not scholar_id:
-        raise ValueError("GOOGLE_SCHOLAR_ID environment variable is not set")
+    author_id = find_author_id()
 
-    # Use free proxies to avoid GitHub Actions IP blocks from Google Scholar
-    pg = ProxyGenerator()
-    pg.FreeProxies()
-    scholarly.use_proxy(pg)
+    time.sleep(1)
+    resp = requests.get(
+        f"{API}/author/{author_id}",
+        params={"fields": "citationCount,papers.title,papers.citationCount,papers.year"},
+        headers=HEADERS,
+        timeout=30,
+    )
+    resp.raise_for_status()
+    data = resp.json()
 
-    print(f"Fetching profile: {scholar_id}")
-    author = scholarly.search_author_id(scholar_id)
-    author = scholarly.fill(author, sections=["basics", "publications"])
-
-    total_citations = author.get("citedby", 0)
-    print(f"Total citations (all papers): {total_citations}")
+    total_citations = data.get("citationCount", 0)
+    print(f"Total citations: {total_citations}")
 
     papers = []
-    for pub in author.get("publications", []):
-        filled = scholarly.fill(pub)
-        title = filled["bib"].get("title", "")
-        cites = filled.get("num_citations", 0)
-        year = filled["bib"].get("pub_year", "")
+    for pub in data.get("papers", []):
+        title = pub.get("title", "")
+        cites = pub.get("citationCount", 0)
+        year = str(pub.get("year", ""))
         print(f"  [{year}] {title}: {cites}")
         papers.append(
             {
