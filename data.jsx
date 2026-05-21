@@ -30,7 +30,7 @@ const STATS = [
   { value: "3",  unit: "yrs",     label: "Industry" },
   { value: "4",  unit: "yrs",     label: "Research" },
   { value: "3",  unit: "papers",  label: "Published" },
-  { value: "11", unit: "",        label: "Citations" }
+  // { value: "11", unit: "",        label: "Citations" }
 ];
 
 const NEWS = [
@@ -87,7 +87,7 @@ const PUBS = [
       "Illustrates the design of questionnaire-based experience assessment in the context of development.",
       "Identifies the importance of separating personal experience from assessment of tasks and tools.",
     ],
-    cites: 6,
+    cites: 7,
   },
 ];
 
